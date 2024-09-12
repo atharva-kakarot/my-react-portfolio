@@ -6,11 +6,7 @@ const Jumbotron = () => {
   return (
     <div className="jumbotron">
       <div id="text-div">
-        <h1 className="display-4">
-          Hi! I'm <span className="tag-syntax">&lt;</span>
-          <span id="tag-text">Atharva</span>
-          <span className="tag-syntax">/&gt;</span>.
-        </h1>
+        <h1 className="display-4">Hi! I'm Atharva.</h1>
         <p className="lead">
           I am a passionate Web Developer looking for opportunities to showcase
           and further develop my skills!
