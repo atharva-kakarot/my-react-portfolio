@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Jumbotron.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-const Jumbotron = () => {
+const Jumbotron: React.FC = () => {
   return (
     <div className="jumbotron">
       <div id="text-div">

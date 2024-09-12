@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Skills.css";
 
-const Skills = () => {
+const Skills: React.FC = () => {
   return (
     <table className="table">
       <thead>
