@@ -1,25 +1,59 @@
 .jumbotron {
-    position: relative;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    align-self: start;
-    height: 100vh;
-    width: 100vw;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  align-self: start;
+  height: 100vh;
+  width: 100vw;
 }
 
 #text-div {
-    margin: 35px;
-    width: 60%;
+  margin: 35px;
+  width: 60%;
 }
 
 .display-4 {
-    font-weight: bold;
-    line-height: 1.5em;
+  font-weight: bold;
+  line-height: 0.82em;
+  font-family: monospace;
+  width: 505px;
+  margin: 20px 0px;
 }
 
 .lead {
-    font-size: 1.8em;
+  font-size: 1.8em;
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .3em solid lime;
+  white-space: nowrap;
+  animation:
+    typing 3s steps(40, end),
+    blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0px
+  }
+
+  to {
+    width: 505px
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: lime;
+  }
 }

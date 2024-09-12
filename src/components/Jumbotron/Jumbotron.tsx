@@ -6,7 +6,9 @@ const Jumbotron = () => {
   return (
     <div className="jumbotron">
       <div id="text-div">
-        <h1 className="display-4">Hi! I'm Atharva.</h1>
+        <div className="typewriter">
+          <h1 className="display-4">Hi! I'm Atharva.</h1>
+        </div>
         <p className="lead">
           I am a passionate Web Developer looking for opportunities to showcase
           and further develop my skills!
