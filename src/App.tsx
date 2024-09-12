@@ -9,8 +9,8 @@ function App() {
       <Navbar />
       <Home>
         <Jumbotron />
-        <Skills />
       </Home>
+      <Skills />
     </div>
   );
 }
