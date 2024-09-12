@@ -1,19 +1,20 @@
 import "./navbar.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div id="nav-bar">
       <div id="links-div">
-        <a href="#home" className="links">
-          <span>About</span>
-        </a>
-        <a href="#home" className="links">
+        <Link to="/" className="links">
+          <span>Home</span>
+        </Link>
+        <Link to="/skills" className="links">
           <span>Skills</span>
-        </a>
-        <a href="#home" className="links">
+        </Link>
+        <Link to="" className="links">
           <span>Projects</span>
-        </a>
+        </Link>
       </div>
       <div id="icons-div">
         <a href="" className="links">

@@ -34,7 +34,7 @@ const Home = ({ children }: Props) => {
         options={{
           background: {
             color: {
-              value: "#000000",
+              value: "#19222B",
             },
           },
           fpsLimit: 144,
