@@ -10,9 +10,28 @@
   width: 100vw;
 }
 
+#outermost-text-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid white; */
+  width: 95%;
+  align-self: center;
+}
+
+#profile-img {
+  border-radius: 50%;
+  width: 25%;
+  margin-right: 5%;
+  background-color: rgb(0, 206, 0);
+}
+
 #text-div {
-  margin: 35px;
-  width: 60%;
+  /* margin: 35px; */
+  /* width: 30%; */
+  margin-right: 5%;
+  /* border: 1px solid white; */
 }
 
 .display-4 {
