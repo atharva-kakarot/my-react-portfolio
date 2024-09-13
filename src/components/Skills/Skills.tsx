@@ -1,6 +1,27 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Skills.css";
 
+interface Props {
+  image: string;
+  text: string;
+}
+
+const Skill: React.FC<Props> = ({ image, text }) => {
+  return (
+    <div className="card">
+      <img
+        src={`src/components/Skills/img/${image}.png`}
+        className="card-img-top"
+      />
+      <div className="card-body">
+        <p className="card-text">{text}</p>
+      </div>
+    </div>
+  );
+};
+
+interface Props {}
+
 const Skills: React.FC = () => {
   return (
     <div id="table-div">
@@ -11,45 +32,10 @@ const Skills: React.FC = () => {
             <td>Front-End Development:</td>
             <td>
               <div className="skills-div">
-                <div className="card">
-                  <img
-                    src="src\components\Skills\img\html5.png"
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <p className="card-text">HTML5</p>
-                  </div>
-                </div>
-
-                <div className="card">
-                  <img
-                    src="src\components\Skills\img\css3.png"
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <p className="card-text">CSS3</p>
-                  </div>
-                </div>
-
-                <div className="card">
-                  <img
-                    src="src\components\Skills\img\javascript.png"
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <p className="card-text">JavaScript</p>
-                  </div>
-                </div>
-
-                <div className="card">
-                  <img
-                    src="src\components\Skills\img\react.png"
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <p className="card-text">React</p>
-                  </div>
-                </div>
+                <Skill image="html5" text="HTML5" />
+                <Skill image="css3" text="CSS3" />
+                <Skill image="javascript" text="JavaScript" />
+                <Skill image="react" text="React" />
               </div>
             </td>
           </tr>
@@ -57,45 +43,30 @@ const Skills: React.FC = () => {
             <td>Back-End Development:</td>
             <td>
               <div className="skills-div">
-                <div className="card">
-                  <img
-                    src="src\components\Skills\img\django.png"
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <p className="card-text">Django</p>
-                  </div>
-                </div>
-
-                <div className="card">
-                  <img
-                    src="src\components\Skills\img\firebase.png"
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <p className="card-text">Firebase</p>
-                  </div>
-                </div>
-
-                <div className="card">
-                  <img
-                    src="src\components\Skills\img\mysql.png"
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <p className="card-text">MySQL</p>
-                  </div>
-                </div>
+                <Skill image="django" text="Django" />
+                <Skill image="firebase" text="Firebase" />
+                <Skill image="mysql" text="MySQL" />
+                <Skill image="ssms" text="SSMS" />
               </div>
             </td>
           </tr>
           <tr>
             <td>Programming Languages:</td>
-            <td>@twitter</td>
+            <td>
+              <div className="skills-div">
+                <Skill image="python" text="Python" />
+                <Skill image="C" text="C" />
+                <Skill image="cpp" text="C++" />
+              </div>
+            </td>
           </tr>
           <tr>
             <td>Version Control:</td>
-            <td>@twitter</td>
+            <td>
+              <div className="skills-div">
+                <Skill image="git" text="Git" />
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>
