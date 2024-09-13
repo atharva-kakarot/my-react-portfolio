@@ -69,6 +69,7 @@
     border-radius: 20px;
     width: 100%;
     height: 100%;
+    background-color: rgba(135, 207, 235, 0.025);
 }
 
 .container-fluid {
