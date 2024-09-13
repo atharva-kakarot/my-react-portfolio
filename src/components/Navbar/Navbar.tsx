@@ -3,6 +3,8 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
+  
   return (
     <div id="nav-bar">
       <div id="links-div">

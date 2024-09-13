@@ -49,6 +49,13 @@ const Projects = () => {
         text="A simple weather app made using HTML, CSS, Django and OpenWeather API."
         link="https://github.com/atharva-kakarot/simple-weather-app"
       />
+      <a
+        href={"https://github.com/atharva-kakarot?tab=repositories"}
+        target={"_blank"}
+        id="view-more"
+      >
+        view more
+      </a>
     </div>
   );
 };
