@@ -15,7 +15,8 @@ const Jumbotron: React.FC = () => {
           <a
             className="btn btn-primary btn"
             id="know-more-btn"
-            href="#"
+            href={"https://www.linkedin.com/in/Atharva-Karanjekar"}
+            target={"_blank"}
             role="button"
           >
             Know more
