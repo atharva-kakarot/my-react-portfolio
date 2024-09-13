@@ -7,15 +7,13 @@ import Skills from "./components/Skills/Skills";
 const App: React.FC = () => {
   return (
     <Router>
-      <div>
-        <Navbar />
-        <Home>
-          <Routes>
-            <Route path="/" element={<Jumbotron />} />
-            <Route path="/skills" element={<Skills />} />
-          </Routes>
-        </Home>
-      </div>
+      <Navbar />
+      <Home>
+        <Routes>
+          <Route path="/" element={<Jumbotron />} />
+          <Route path="/skills" element={<Skills />} />
+        </Routes>
+      </Home>
     </Router>
   );
 };
