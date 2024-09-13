@@ -54,8 +54,8 @@
 
 .skills-outer-div {
     border: 1px solid #344658;
-    margin: 5px;
-    backdrop-filter: blur(8px);
+    margin: 10px;
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     width: 100%;
 }
