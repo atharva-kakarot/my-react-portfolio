@@ -3,12 +3,24 @@ import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 interface Props {
   children: React.ReactNode;
 }
 
 const Home = ({ children }: Props) => {
+  const [bgColorState, setBgColorState] = useState("#00FF00");
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === "/skills") {
+      setBgColorState("#00fffb");
+    } else {
+      setBgColorState("#00FF00");
+    }
+  }, [location]);
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
 
@@ -62,7 +74,7 @@ const Home = ({ children }: Props) => {
           },
           particles: {
             color: {
-              value: "#00FF00",
+              value: bgColorState,
             },
             links: {
               color: "#ffffff",
