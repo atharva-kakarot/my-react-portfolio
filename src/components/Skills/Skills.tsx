@@ -25,51 +25,51 @@ interface Props {}
 const Skills: React.FC = () => {
   return (
     <div id="table-div">
-      <h1 id="table-header">Skillset</h1>
-      <table className="table">
-        <tbody>
-          <tr>
-            <td>Front-End Development:</td>
-            <td>
+      <div className="container-fluid">
+        <div className="row text-center">
+          <div className="col-6">
+            <div className="skills-outer-div">
+              <h1 className="skills-header">Front-End Development:</h1>
               <div className="skills-div">
                 <Skill image="html5" text="HTML5" />
                 <Skill image="css3" text="CSS3" />
                 <Skill image="javascript" text="JavaScript" />
                 <Skill image="react" text="React" />
               </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Back-End Development:</td>
-            <td>
+            </div>
+          </div>
+
+          <div className="col-6">
+            <div className="skills-outer-div">
+              <h1 className="skills-header">Back-End Development:</h1>
               <div className="skills-div">
                 <Skill image="django" text="Django" />
                 <Skill image="firebase" text="Firebase" />
                 <Skill image="mysql" text="MySQL" />
                 <Skill image="ssms" text="SSMS" />
               </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Programming Languages:</td>
-            <td>
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="skills-outer-div">
+              <h1 className="skills-header">Programming Languages:</h1>
               <div className="skills-div">
                 <Skill image="python" text="Python" />
                 <Skill image="C" text="C" />
                 <Skill image="cpp" text="C++" />
               </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Version Control:</td>
-            <td>
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="skills-outer-div">
+              <h1 className="skills-header">Version Control:</h1>
               <div className="skills-div">
                 <Skill image="git" text="Git" />
               </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
