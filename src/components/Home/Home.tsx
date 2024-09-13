@@ -17,6 +17,8 @@ const Home = ({ children }: Props) => {
   useEffect(() => {
     if (location.pathname === "/skills") {
       setBgColorState("#00fffb");
+    } else if (location.pathname === "/projects") {
+      setBgColorState("#e100ff");
     } else {
       setBgColorState("#00FF00");
     }
