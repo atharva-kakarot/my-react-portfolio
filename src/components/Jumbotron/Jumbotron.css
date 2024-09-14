@@ -57,11 +57,19 @@
 }
 
 @media screen and (max-width: 981px) {
-  .jumbotron {
+  #jumbotron-div {
     position: fixed;
     left: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
     margin: auto;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .jumbotron {
+    position: relative;
   }
 
   #outermost-text-div {
@@ -86,4 +94,22 @@
   .lead {
     font-size: 1em;
   }
+
+  #know-more-btn {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 981px) and (orientation: landscape) {
+  #jumbotron-div {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .jumbotron {
+    position: relative;
+    margin-top: 15%;
+  }
+  
 }
