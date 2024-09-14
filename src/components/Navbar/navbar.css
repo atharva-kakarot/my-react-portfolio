@@ -53,3 +53,16 @@ i {
     cursor: pointer;
     margin: 0px 20px;
 }
+
+@media screen and (max-width: 981px){
+    i {
+        font-size: 1em;
+        margin: 10px;
+    }
+    
+    .links-text {
+        font-size: 1em;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
