@@ -1,5 +1,7 @@
 import "@fortawesome/fontawesome-free/css/fontawesome.min.css";
 import "./Projects.css";
+import animemiru from "./img/animemiru.jpeg";
+import weatherapp from "./img/weatherapp.jpeg";
 
 interface Props {
   title: string;
@@ -13,7 +15,7 @@ interface Props {}
 const Card = ({ title, img, text, link }: Props) => {
   return (
     <div className="project-card">
-      <img src={`img/${img}.jpeg`} className="card-img" />
+      <img src={img} className="card-img" />
       <div className="project-card-body">
         <h5 className="project-card-title">{title}</h5>
         <p className="project-card-text">{text}</p>
@@ -35,13 +37,13 @@ const Projects = () => {
   return (
     <div id="project-cards-div">
       <Card
-        img="animemiru"
+        img={animemiru}
         title="AnimeMiru"
         text="A simple anime information library app made using pure HTML, CSS, JavaScript and AniList API."
         link="https://github.com/atharva-kakarot/AnimeMiru"
       />
       <Card
-        img="weatherapp"
+        img={weatherapp}
         title="Simple Weather App"
         text="A simple weather app made using HTML, CSS, Django and OpenWeather API."
         link="https://github.com/atharva-kakarot/simple-weather-app"

@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Jumbotron.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import profilepic from "./img/profilepic.png";
 
 const Jumbotron: React.FC = () => {
   return (
@@ -37,7 +38,7 @@ const Jumbotron: React.FC = () => {
               </a>
             </p>
           </div>
-          <img src={"img/profilepic.png"} id="profile-img" />
+          <img src={profilepic} id="profile-img" />
         </div>
       </div>
     </div>

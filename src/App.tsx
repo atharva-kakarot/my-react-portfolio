@@ -7,7 +7,7 @@ import Projects from "./components/Projects/Projects";
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/my-react-portfolio">
       <Navbar />
       <Home>
         <Routes>
