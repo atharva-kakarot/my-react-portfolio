@@ -7,13 +7,13 @@ import Projects from "./components/Projects/Projects";
 
 const App: React.FC = () => {
   return (
-    <Router basename="/my-react-portfolio">
+    <Router basename="/my-react-portfolio/">
       <Navbar />
       <Home>
         <Routes>
-          <Route path="/" element={<Jumbotron />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="" element={<Jumbotron />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="projects" element={<Projects />} />
         </Routes>
       </Home>
     </Router>
