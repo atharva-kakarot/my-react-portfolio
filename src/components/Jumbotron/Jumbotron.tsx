@@ -7,7 +7,19 @@ const Jumbotron: React.FC = () => {
     <div className="jumbotron">
       <div id="outermost-text-div">
         <div id="text-div">
-          <h1 className="display-4">Hi! I'm Atharva.</h1>
+          <h1 className="display-4">
+            Hi! I'm{" "}
+            <small
+              style={{
+                display: "inline",
+                color: "lime",
+                fontSize: "1.04em",
+              }}
+            >
+              Atharva
+            </small>
+            .
+          </h1>
           <p className="lead">
             I am an aspiring Web Developer looking for opportunities to showcase
             and further develop my skills!

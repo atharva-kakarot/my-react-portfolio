@@ -15,7 +15,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid white; */
   width: 95%;
   align-self: center;
 }
@@ -28,10 +27,7 @@
 }
 
 #text-div {
-  /* margin: 35px; */
-  /* width: 30%; */
   margin-right: 5%;
-  /* border: 1px solid white; */
 }
 
 .display-4 {

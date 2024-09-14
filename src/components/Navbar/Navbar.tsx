@@ -7,13 +7,13 @@ const Navbar = () => {
     <div id="nav-bar">
       <div id="links-div">
         <Link to="/" className="links">
-          <span>Home</span>
+          <span className="links-text">Home</span>
         </Link>
         <Link to="/skills" className="links">
-          <span>Skills</span>
+          <span className="links-text">Skills</span>
         </Link>
         <Link to="/projects" className="links">
-          <span>Projects</span>
+          <span className="links-text">Projects</span>
         </Link>
       </div>
       <div id="icons-div">

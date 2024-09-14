@@ -15,15 +15,18 @@ body {
     z-index: 1;
 }
 
-span {
+.links-text {
     font-size: 1.5em;
     padding: 12px 25px;
-    border-radius: 5px;
     border: none;
     margin: 5px 5px;
     background-color: transparent;
     color: white;
     cursor: pointer;
+}
+
+.links-text:hover {
+    border-bottom: 3px solid white;
 }
 
 .links {
