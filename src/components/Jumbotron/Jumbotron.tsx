@@ -37,10 +37,7 @@ const Jumbotron: React.FC = () => {
               </a>
             </p>
           </div>
-          <img
-            src={"src/components/Jumbotron/img/profilepic.png"}
-            id="profile-img"
-          />
+          <img src={"img/profilepic.png"} id="profile-img" />
         </div>
       </div>
     </div>
