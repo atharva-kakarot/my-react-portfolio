@@ -9,10 +9,7 @@ interface Props {
 const Skill: React.FC<Props> = ({ image, text }) => {
   return (
     <div className="card">
-      <img
-        src={`src/components/Skills/img/${image}.png`}
-        className="card-img-top"
-      />
+      <img src={`img/${image}.png`} className="card-img-top" />
       <div className="card-body">
         <p className="card-text">{text}</p>
       </div>

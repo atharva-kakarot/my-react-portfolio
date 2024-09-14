@@ -13,10 +13,7 @@ interface Props {}
 const Card = ({ title, img, text, link }: Props) => {
   return (
     <div className="project-card">
-      <img
-        src={`src/components/Projects/img/${img}.jpeg`}
-        className="card-img"
-      />
+      <img src={`img/${img}.jpeg`} className="card-img" />
       <div className="project-card-body">
         <h5 className="project-card-title">{title}</h5>
         <p className="project-card-text">{text}</p>
